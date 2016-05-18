@@ -1,10 +1,9 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+﻿<!doctype html>
+<html>
 <head>
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Bootstrap Theme Company Page</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Assignment 1</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
@@ -31,7 +30,7 @@
       margin-bottom: 30px;
   }  
   .jumbotron {
-      background-color:#5DF2FF;
+      background-color: #f4511e;
       color: #fff;
       padding: 100px 25px;
       font-family: Montserrat, sans-serif;
@@ -43,11 +42,11 @@
       background-color: #f6f6f6;
   }
   .logo-small {
-      color: red;
+      color: #f4511e;
       font-size: 50px;
   }
   .logo {
-      color: #5DF2FF;
+      color: #f4511e;
       font-size: 200px;
   }
   .thumbnail {
@@ -62,13 +61,13 @@
   }
   .carousel-control.right, .carousel-control.left {
       background-image: none;
-      color: #5DF2FF;
+      color: #f4511e;
   }
   .carousel-indicators li {
-      border-color: #5DF2FF;
+      border-color: #f4511e;
   }
   .carousel-indicators li.active {
-      background-color: #5DF2FF;
+      background-color: #f4511e;
   }
   .item h4 {
       font-size: 19px;
@@ -81,7 +80,7 @@
       font-style: normal;
   }
   .panel {
-      border: 1px solid #5DF2FF; 
+      border: 1px solid #f4511e; 
       border-radius:0 !important;
       transition: box-shadow 0.5s;
   }
@@ -89,13 +88,13 @@
       box-shadow: 5px 0px 40px rgba(0,0,0, .2);
   }
   .panel-footer .btn:hover {
-      border: 1px solid #5DF2FF;
+      border: 1px solid #f4511e;
       background-color: #fff !important;
-      color: #5DF2FF;
+      color: #f4511e;
   }
   .panel-heading {
       color: #fff !important;
-      background-color: #5DF2FF !important;
+      background-color: #f4511e !important;
       padding: 25px;
       border-bottom: 1px solid transparent;
       border-top-left-radius: 0px;
@@ -115,12 +114,12 @@
   }
   .panel-footer .btn {
       margin: 15px 0;
-      background-color: #5DF2FF;
+      background-color: #f4511e;
       color: #fff;
   }
   .navbar {
       margin-bottom: 0;
-      background-color: #5DF2FF;
+      background-color: #f4511e;
       z-index: 9999;
       border: 0;
       font-size: 12px !important;
@@ -133,7 +132,7 @@
       color: #fff !important;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
-      color: #5DF2FF !important;
+      color: #f4511e !important;
       background-color: #fff !important;
   }
   .navbar-default .navbar-toggle {
@@ -143,7 +142,7 @@
   footer .glyphicon {
       font-size: 20px;
       margin-bottom: 20px;
-      color: #5DF2FF;
+      color: #f4511e;
   }
   .slideanim {visibility:hidden;}
   .slide {
@@ -219,7 +218,7 @@
   <p>We specialize in blablabla</p> 
   <form class="form-inline">
     <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-    <button type="button" class="btn btn-primary">Subscribe</button>
+    <button type="button" class="btn btn-danger">Subscribe</button>
   </form>
 </div>
 
@@ -249,7 +248,6 @@
       <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
-
   </div>
 </div>
 
@@ -494,6 +492,7 @@ $(document).ready(function(){
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
 
     // Prevent default anchor click behavior
+
     event.preventDefault();
 
     // Store hash
@@ -512,8 +511,7 @@ $(document).ready(function(){
   
   $(window).scroll(function() {
     $(".slideanim").each(function(){
-      var pos = $(this).offset().top;
-
+      var pos = $(this).offset().top
       var winTop = $(window).scrollTop();
         if (pos < winTop + 600) {
           $(this).addClass("slide");
@@ -524,4 +522,3 @@ $(document).ready(function(){
 </script>
 
 </body>
-</html>
