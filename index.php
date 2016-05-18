@@ -28,7 +28,7 @@
   h2 {
       font-size: 24px;
       text-transform: uppercase;
-      color: #303030;
+      color: #FFF;
       font-weight: 600;
       margin-bottom: 30px;
   }
@@ -229,11 +229,13 @@
 </nav>
 
 <div class="jumbotron text-center">
+  <br />
   <h1>Assignment</h1> 
   <p>Internet Development</p>
 </div>
 
 <div id="map" class="container-fluid text-center bg-grey" style="background-image:url(bgimage3.jpg);background-repeat: no-repeat;">
+  <h2>Most coffee drinking devs in the world</h2> 
   <div id="mapid" style="height:622px; text-align:center;">
 	<script>
 	L.mapbox.accessToken = 							'pk.eyJ1IjoibWFiaWRyYXNvb2wiLCJhIjoiY2lsaDhsYmp4MmJmN3Y2bTA5cnE5ODI1cCJ9.urUEPZSyHz6sQYuGrz4OKA';
@@ -330,9 +332,7 @@ markers[4].on('mouseout', onMarkerOut);
 	</script>
 	</div>
 </div>
-
 <div id="chart1" class="container-fluid text-center bg-grey">
-
 <script>
 $(function () {
     $('#chart1').highcharts({
@@ -513,7 +513,7 @@ $(function () {
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-  <p>Bootstrap Theme Made By <a href="http://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>		
+  <p style="font-weight:bold; color:#5A3319">Bootstrap Template Made By <a href="http://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>	
 </footer>
 
 <script>
