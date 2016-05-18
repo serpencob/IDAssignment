@@ -354,7 +354,7 @@ $(function () {
         },
         yAxis: {
             title: {
-                text: 'Persantage of users'
+                text: 'Percentage of users'
             },
             labels: {
                 formatter: function () {
